@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import './Nav.css'
 
+const netflixLogoUrl = process.env.REACT_APP_NETFLIX_LOGO_URL;
+const netflixAvatarUrl = process.env.REACT_APP_NETFLIX_AVATAR_URL;
+
 function Nav() {
   const [show, setShow] = useState(false);
 
@@ -21,12 +24,12 @@ function Nav() {
     <div className={`nav ${show && 'nav__black'}`}>
       <img
         className="nav__logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+        src={netflixLogoUrl}
         alt="Netflix Logo"
       />
       <img
         className="nav__avatar"
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+        src={netflixAvatarUrl}
         alt="Netflix Avatar"
       />
     </div>

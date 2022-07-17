@@ -10,3 +10,5 @@ Implemented stuff:
 - useEffect
 - axios
 - CSS modules
+- react-youtube
+- movie-trailer
